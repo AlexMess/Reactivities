@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 import { Header, List } from 'semantic-ui-react';
-import Button from 'semantic-ui-react/dist/commonjs/elements/Button';
 
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
   },[])
   return (
     <div>
-      
         <Header as='h2' icon='users' content='Reactivities'/>
         <List>
           {activities.map((activity: any) => (
@@ -28,9 +26,6 @@ function App() {
             
           ))}
         </List>
-        
-        
-     
     </div>
   );
 }
